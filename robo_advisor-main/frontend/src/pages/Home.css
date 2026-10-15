@@ -1,0 +1,75 @@
+.home { max-width: 1100px; margin: 0 auto; padding: 60px 24px 100px; }
+
+.hero { max-width: 640px; margin-bottom: 90px; }
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  margin-bottom: 18px;
+}
+.hero h1 {
+  font-size: 56px;
+  line-height: 1.05;
+  font-weight: 800;
+  margin: 0 0 22px;
+  letter-spacing: -0.02em;
+}
+.accent { color: var(--gold); }
+.hero-sub {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+.cta {
+  background: var(--gold);
+  color: #14171c;
+  border: none;
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.cta:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(232,180,76,0.25); }
+.cta:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+
+.how h2, .team h2 {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.how { margin-bottom: 80px; }
+.how-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.how-step {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+}
+.step-num { font-family: var(--font-mono); color: var(--gold-dim); font-size: 13px; }
+.how-step h3 { margin: 8px 0 6px; font-size: 16px; }
+.how-step p { margin: 0; font-size: 13.5px; color: var(--text-muted); line-height: 1.5; }
+
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.team-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+}
+.team-card h4 { margin: 0 0 8px; font-size: 14.5px; }
+.team-card p { margin: 0; font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+@media (max-width: 800px) {
+  .hero h1 { font-size: 38px; }
+  .how-grid, .team-grid { grid-template-columns: 1fr 1fr; }
+}
